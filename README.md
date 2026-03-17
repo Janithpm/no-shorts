@@ -13,7 +13,7 @@ Chrome extension that removes YouTube Shorts UI on youtube.com.
 
 ## Commands
 
-- pnpm run build: create production extension files in dist/
+- pnpm run build: create minified production extension files in dist/
 - pnpm run watch: watch and compile TypeScript while developing
 - pnpm run typecheck: run strict TypeScript checks
 - pnpm run package: build and create no-shorts-extension.zip
