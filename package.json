@@ -1,0 +1,21 @@
+{
+  "name": "no-shorts",
+  "version": "1.0.0",
+  "description": "Chrome extension to hide YouTube Shorts.",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build:ts": "tsc -p tsconfig.json",
+    "build:assets": "node scripts/copy-assets.mjs",
+    "build": "pnpm run clean && pnpm run build:ts && pnpm run build:assets",
+    "watch": "tsc -w -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "package": "pnpm run build && cd dist && zip -r ../no-shorts-extension.zip ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.28.2"
+}

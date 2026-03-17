@@ -1,0 +1,15 @@
+/* Hide known Shorts shelves/cards and Shorts page rails */
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer,
+ytd-reel-video-renderer,
+ytd-rich-grid-slim-media[is-short],
+ytd-video-renderer:has(a[href*="/shorts/"]),
+ytd-grid-video-renderer:has(a[href*="/shorts/"]),
+ytd-compact-video-renderer:has(a[href*="/shorts/"]),
+#endpoint[title="Shorts"],
+a[title="Shorts"],
+a[href="/shorts"],
+a[href^="/shorts/"],
+a[href*="/shorts/"] {
+  display: none !important;
+}
